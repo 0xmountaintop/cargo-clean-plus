@@ -1,0 +1,23 @@
+[package]
+name = "cargo-clean-plus"
+authors = ["Akase Haruka <light.tsing@gmail.com>"]
+description = "Remove artifacts for every cargo project under a directory."
+keywords = ["cargo", "plugin", "subcommand", "clean", "remove"]
+categories = [
+    "command-line-utilities",
+    "development-tools",
+    "development-tools::cargo-plugins"
+]
+repository = "https://github.com/lightsing/cargo-clean-plus"
+readme = "README.md"
+version = "0.1.0"
+edition = "2024"
+license = "AGPL-3.0-or-later"
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "4", features = ["derive"] }
+indicatif = "0.17"
+walkdir = "2.5"
+regex = "1.11"
+console = "0.15.8"
